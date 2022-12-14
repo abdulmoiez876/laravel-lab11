@@ -16,6 +16,13 @@
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
             </div>
 
+            <!-- User Name -->
+            <div>
+                <x-input-label for="userName" :value="__('Username')" />
+                <x-text-input id="userName" class="block mt-1 w-full" type="text" name="userName" :value="old('userName')" required autofocus />
+                <x-input-error :messages="$errors->get('userName')" class="mt-2" />
+            </div>
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-input-label for="email" :value="__('Email')" />
